@@ -6,7 +6,10 @@ block variables
     - let title       = 'Write title for this page here'
     - let description = 'Write description for this page here'
     - let keywords    = 'Write keywords for this page here'
-    - let pageClass   = 'page-blog'
+    - let pageClass   = 'blog'
 
 block content
-    h1 hello world
+    section.blog__container
+        include blog-caption
+        include article-list
+        include blog-pagination
