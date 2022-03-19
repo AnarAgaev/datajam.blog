@@ -1,0 +1,14 @@
+//- Include used template for this page
+extends ../../templates/template
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Write title for this page here'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let pageClass   = 'post'
+
+block content
+    section.post__container
+        include post-caption
+        include post-author

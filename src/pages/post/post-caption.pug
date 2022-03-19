@@ -1,0 +1,29 @@
+header.post__title
+    // Для того чтобы поменять отображение соц.ссылок в разных языковых версиях
+    // нужно поменять значение data атрибута У СПИСКА СОЦ. ССЫЛОК соответственно
+    // data-lang="ru" - для отображения соц.ссылок для России
+    // data-lang="en" - для отображения соц.ссылок для других стран
+    ul.post__socials(data-lang="ru")
+        li
+            span Поделиться:
+        li(data-lang-for="ru")
+            a(href="#")
+                img(src="img/i-ok.svg" alt)
+        li(data-lang-for="ru")
+            a(href="#")
+                img(src="img/i-vk.svg" alt)
+        li(data-lang-for="ru")
+            a(href="#")
+                img(src="img/i-youtube.svg" alt)
+
+        li(data-lang-for="en")
+            a(href="#")
+                img(src="img/i-facebook.svg" alt)
+        li(data-lang-for="en")
+            a(href="#")
+                img(src="img/i-instagram.svg" alt)
+        li(data-lang-for="en")
+            a(href="#")
+                img(src="img/i-youtube.svg" alt)
+
+    h1 Полезные статьи для вашего развития в инстаграм и личностного роста

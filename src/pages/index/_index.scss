@@ -1,29 +1,40 @@
 @import "../../templates/scss/variables";
 
 .blog {
+    padding-top: 40px;
+
+    @media (min-width: $sm) {
+        padding-top: 60px;
+    }
+
+    @media (min-width: $lg) {
+        padding-top: 80px;
+    }
+
     &__title {
         display: block;
+        width: 100%;
         margin: 0;
-        padding: 40px 0 20px;
+        padding: 0 0 20px;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.3;
         color: #212224;
 
         @media (min-width: $sm) {
-            padding-top: 60px;
             font-size: 32px;
             line-height: 41px;
         }
 
         @media (min-width: $lg) {
-            padding-top: 80px;
             font-size: 41px;
             line-height: 55px;
         }
     }
 
     &__subtitle {
+        display: block;
+        width: 100%;
         margin: 0;
         padding: 0;
         font-weight: 500;
@@ -140,6 +151,7 @@
 
     &__caption {
         display: block;
+        width: 100%;
         font-weight: 600;
         font-size: 18px;
         line-height: 27px;
@@ -155,6 +167,7 @@
 
     &__desctription {
         display: block;
+        width: 100%;
         margin: 9px 0 20px;
         padding: 0;
         font-weight: 300;
