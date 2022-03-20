@@ -1,0 +1,25 @@
+.post__form
+    h5 Добавить комментарий
+
+    // Состояния контроллеров:
+    // не активное - добавить атрибут disabled
+    // ошбика - добавить класс .error
+    // введенные данные валдны - добавить калсс .valid
+
+    form.post__add-comment(action="/" method="get")
+        .post__form-group
+            label
+                input.post__input.error(type="text" name="firstName" placeholder="Ваше имя" value="Example Error")
+
+        .post__form-group
+            label
+                input.post__input.valid(type="text" name="lastName" placeholder="Ваша почта" value="Example Valid")
+
+        textarea.post__textarea(placeholder="Введите текст")
+
+        label.post__label-check
+            input.invisible(type="checkbox" name="saveUser" value="true")
+            span.checker Сохранить моё имя и e-mail в этом браузере для последующих моих комментариев.
+
+        // Для неактивной кнопки добавлять атрибут disabled
+        button.post__btn(type='submit') Оставить комментарий

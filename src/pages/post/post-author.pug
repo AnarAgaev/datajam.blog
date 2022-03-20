@@ -1,1 +1,16 @@
 .post__author
+    // Картинку для аватарки добавлять в инлайновый атрибут style -> background-image
+    .post__avatar(style="background-image: url('img/temp/avatar.jpg')")
+    .post__author-data
+        p.post__person
+            span.post__name Константинов Константин
+            span.post__position Креативный креативщик
+        ul.post__datetime
+            li
+                img(src="img/i-calendar.svg" alt)
+                | 15.12.2021
+            li
+                img(src="img/i-clock.svg" alt)
+                | 7 мин.
+
+        include post-socials

@@ -31,8 +31,7 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -55,7 +54,6 @@ body {
     }
 
     button {
-        background-color: transparent;
         border: none;
         cursor: pointer;
         margin: 0;
@@ -80,221 +78,10 @@ body {
         z-index: -1 !important;
     }
 
-    .btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        width: 100%;
-        outline: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-
-        box-sizing: border-box;
-        height: 60px;
-        background: linear-gradient(180deg, #74C733 0%, #57A41B 100%);
-        box-shadow: 0 45px 72px rgba(116, 199, 51, 0.15),
-        0 25px 40px rgba(116, 199, 51, 0.25),
-        0 5px 15px rgba(116, 199, 51, 0.45);
-        border-radius: 16px;
-
-        font-style: normal;
-        font-weight: 600;
-        font-size: 13px;
-        line-height: 19px;
-        //color: $color-font-btn;
-        text-decoration: none;
-        text-align: center;
-        text-transform: uppercase;
-
-        transition: all .2s linear;
-
-        @media (min-width: $md) {
-            &:hover {
-                box-shadow: 0 0 0 rgba(255, 255, 255, 0);
-            }
-        }
-
-        &:disabled {
-            background: none;
-            box-shadow: 0 0 0 rgba(255, 255, 255, 0);
-            color: #C6C5D2;
-            cursor: not-allowed;
-        }
-    }
-
     .color-accent {
         display: inline-block;
         color: $color-accent;
     }
-
-
-
-
-    .form {
-        margin-top: 37px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-
-        @media (min-width: $md) {
-            flex-direction: row;
-            align-items: flex-start;
-            margin-top: 42px;
-        }
-
-        label {
-            display: block;
-            position: relative;
-            width: 100%;
-            margin-bottom: 10px;
-
-            @media (min-width: $md) {
-                width: 270px;
-                margin-right: 10px;
-                margin-bottom: 0;
-            }
-        }
-
-        button {
-            display: block;
-            position: relative;
-
-            @media (min-width: $md) {
-                width: 282px;
-                //margin-right: 10px;
-            }
-        }
-
-        .help {
-            display: none;
-
-            @media (min-width: $md) {
-                display: block;
-                position: absolute;
-                bottom: -44px;
-                left: 75px;
-                width: 256px;
-                height: auto;
-                font-weight: 700;
-                font-size: 10px;
-                line-height: 11px;
-                letter-spacing: 0.06em;
-                color: #F95C3A;
-            }
-
-            img {
-                display: block;
-                position: absolute;
-                top: -15px;
-                left: -50px;
-                width: 41px;
-                height: 22px;
-            }
-        }
-    }
-
-    .input {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        outline: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        box-sizing: border-box;
-        cursor: pointer;
-
-        width: 100%;
-        height: 60px;
-        padding: 0 24px;
-        //background: $color-back-primary;
-        border: 1px solid #88879B;
-        border-radius: 14px;
-
-        font-style: italic;
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 17px;
-        text-align: left;
-        //color: $color-font-control;
-
-        transition: all .2s linear;
-
-        &:focus {
-            //border-color: $color-font-accent;
-        }
-
-        &:disabled {
-            cursor: not-allowed;
-            background: #F5F4F8;
-            border-color: #E1E1E7;
-            color: #C6C5D2;
-        }
-
-        &.error {
-            border-color: #C93329;
-            color: #C93329;
-        }
-
-        &.valid {
-            //border-color: $color-font-accent;
-            //color: $color-font-accent;
-        }
-
-        &::-webkit-input-placeholder {
-            color: #C6C5D2;
-            opacity: 1;
-            transition: opacity 0.2s ease;
-        }
-
-        &::-moz-placeholder {
-            color: #C6C5D2;
-            opacity: 1;
-            transition: opacity 0.2s ease;
-        }
-
-        &:-moz-placeholder {
-            color: #C6C5D2;
-            opacity: 1;
-            transition: opacity 0.2s ease;
-        }
-
-        &:-ms-input-placeholder {
-            color: #C6C5D2;
-            opacity: 1;
-            transition: opacity 0.2s ease;
-        }
-
-        &:focus::-webkit-input-placeholder {
-            color: #C6C5D2;
-            opacity: 0;
-            transition: opacity 0.2s ease;
-        }
-
-        &:focus::-moz-placeholder {
-            color: #C6C5D2;
-            opacity: 0;
-            transition: opacity 0.2s ease;
-        }
-
-        &:focus:-moz-placeholder {
-            color: #C6C5D2;
-            opacity: 0;
-            transition: opacity 0.2s ease;
-        }
-
-        &:focus:-ms-input-placeholder {
-            color: #C6C5D2;
-            opacity: 0;
-            transition: opacity 0.2s ease;
-        }
-    }
-
-
-
 
     // Grid on 12 columns
     &__container {

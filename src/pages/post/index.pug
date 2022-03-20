@@ -7,8 +7,15 @@ block variables
     - let description = 'Write description for this page here'
     - let keywords    = 'Write keywords for this page here'
     - let pageClass   = 'post'
+    - let printPostPopular = 'true'
 
 block content
     section.post__container
         include post-caption
         include post-author
+        // Картинку для поств добавлять в инлайновый атрибут style -> background-image
+        .post__img(style="background-image: url('img/temp/article.jpg')")
+        .post__subtitle Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+        .post__content
+            include post-text
+            include post-sidebar

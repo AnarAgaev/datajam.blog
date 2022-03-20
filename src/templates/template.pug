@@ -13,8 +13,8 @@ html(lang="ru")
         meta(name="keywords" content=keywords)
         title #{title}
 
-        link(rel="preload" href="css/vendor.css" as="style")
-        link(rel="stylesheet" href="css/vendor.css" type="text/css")
+        //- link(rel="preload" href="css/vendor.css" as="style")
+        //- link(rel="stylesheet" href="css/vendor.css" type="text/css")
         link(rel="preload" href="css/style.css" as="style")
         link(rel="stylesheet" href="css/style.css" type="text/css")
 
@@ -29,3 +29,6 @@ html(lang="ru")
         // .post - для страницы отдельной статьи
         main(class=pageClass)
             block content
+
+        if printPostPopular
+            include ../pages/post/post-popular
