@@ -87,7 +87,7 @@
             font-weight: 700;
             font-size: 26px;
             line-height: 1.3;
-            color: #212224;
+            color: $color-font-primary;
 
             @media (min-width: $sm) {
                 margin-top: 29px;
@@ -181,7 +181,7 @@
         font-weight: 700;
         font-size: 15px;
         line-height: 26px;
-        color: #212224;
+        color: $color-font-primary;
 
         @media (min-width: $lg) {
             font-size: 18px;
@@ -271,7 +271,7 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 1.4;
-        color: #212224;
+        color: $color-font-primary;
 
         @media (min-width: $sm) {
             font-size: 24px;
@@ -334,7 +334,7 @@
             font-weight: 700;
             font-size: 15px;
             line-height: 25px;
-            color: #212224;
+            color: $color-font-primary;
             margin: 0;
             padding: 0;
             width: 100%;
@@ -349,7 +349,7 @@
             font-weight: 400;
             font-size: 13px;
             line-height: 23px;
-            color: #212224;
+            color: $color-font-primary;
         }
 
         ul {
@@ -391,7 +391,7 @@
             font-weight: 700;
             font-size: 24px;
             line-height: 33px;
-            color: #212224;
+            color: $color-font-primary;
 
             @media (min-width: $md) {
                 font-size: 32px;
@@ -405,7 +405,7 @@
             font-weight: 500;
             font-size: 24px;
             line-height: 33px;
-            color: #212224;
+            color: $color-font-primary;
         }
 
         p  {
@@ -425,7 +425,7 @@
             font-size: 24px;
             line-height: 33px;
             text-align: center;
-            color: #212224;
+            color: $color-font-primary;
 
             @media (min-width: $md) {
                 margin-top: 60px;
@@ -481,7 +481,7 @@
             font-weight: 700;
             font-size: 20px;
             line-height: 1.4;
-            color: #212224;
+            color: $color-font-primary;
             margin: 0 0 19px;
             padding: 0;
 
@@ -638,7 +638,7 @@
             font-weight: 500;
             font-size: 13px;
             line-height: 18px;
-            color: #212224;
+            color: $color-font-primary;
             transition: all .2s linear;
 
             @media (min-width: $md) {
@@ -664,7 +664,7 @@
             font-weight: 700;
             font-size: 32px;
             line-height: 41px;
-            color: #212224;
+            color: $color-font-primary;
             margin: 0;
             padding: 0;
             z-index: 2;
@@ -698,7 +698,7 @@
             font-weight: 700;
             font-size: 24px;
             line-height: 32px;
-            color: #212224;
+            color: $color-font-primary;
             margin-bottom: 20px;
         }
     }
@@ -857,7 +857,7 @@
             font-weight: 400;
             font-size: 15px;
             line-height: 25px;
-            color: #212224;
+            color: $color-font-primary;
             padding-left: 28px;
             display: inline-block;
 

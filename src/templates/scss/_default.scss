@@ -5,26 +5,14 @@ html {
     touch-action: manipulation;
 }
 
-// Удаление иконки очистки поля в IE
-input[type="text"]::-ms-clear {
-    display: none;
-}
-
-// Удаление иконки отображения пароля в IE
-input[type="password"]::-ms-reveal {
-    display: none;
-}
-
 body, html {
     min-height: 100vh;
     margin: 0;
     padding: 0;
 }
 
-body {
-    &.unscrollable {
-        overflow: hidden !important;
-    }
+body.hidden {
+    overflow: hidden !important;
 }
 
 .blog, .post {
@@ -36,7 +24,7 @@ body {
     font-weight: normal;
     font-style: normal;
     font-size: 15px;
-    color: #3B3E43;
+    color: $color-font-primary;
     background-color: #ffffff;
     box-sizing: border-box;
 
@@ -83,7 +71,17 @@ body {
         color: $color-accent;
     }
 
-    // Grid on 12 columns
+    // Удаление иконки очистки поля в IE
+    input[type="text"]::-ms-clear {
+        display: none;
+    }
+
+    // Удаление иконки отображения пароля в IE
+    input[type="password"]::-ms-reveal {
+        display: none;
+    }
+
+    // Grid
     &__container {
         display: block;
         width: 100%;
